@@ -20,3 +20,12 @@ body{
     padding-bottom: 2rem;
     background-color: aliceblue;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+.buttons button{
+    margin: 0.25rem;
+}
