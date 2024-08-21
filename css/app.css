@@ -8,3 +8,13 @@ body{
     background: aqua
 
 }
+.display{
+    text-align: center;
+    font-size: 5rem;
+    border: solid black 0.5rem;
+    margin-left: 18rem;
+    margin-right: 18rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: aliceblue;
+}
