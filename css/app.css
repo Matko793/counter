@@ -3,12 +3,14 @@ text-align: center;
 font-size: 4rem;
 color: azure;
 text-shadow: 0 0 4px #000000;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 body{
     background: aqua
 
 }
 .display{
+    font-family:'Times New Roman', Times, serif;
     text-align: center;
     font-size: 5rem;
     border: solid black 0.5rem;
