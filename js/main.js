@@ -1,15 +1,30 @@
 
-    const abraka = document.querySelector("h2");
-    let num = 0;
+    //variables
 
-    document.getElementById("inc").onclick = function test(){
+    let abraka = document.querySelector("h2");
+    let num = 0;
+    //functions
+    function plus(){
         num++
         abraka.textContent = num;  
     }
-    document.getElementById("rst").onclick = function reset(){
+    function minus(){
+        if (num == 0){
+            num = 0;
+        }
+        else{
+            num--
+            abraka.textContent = num;
+        }  
+    }
+    function reset(){
         num = 0;
         abraka.textContent = num;
     }
-    
+
+    // assining functions
+    document.getElementById("inc").onclick = plus
+    document.getElementById("min").onclick = minus
+    document.getElementById("rst").onclick = reset
 
   
