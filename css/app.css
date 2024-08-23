@@ -5,6 +5,13 @@ color: azure;
 text-shadow: 0 0 4px #000000;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+.display h2{
+    text-align: center;
+    font-size: 4rem;
+    color: azure;
+    text-shadow: 0 0 4px #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
 body{
     background: aqua
 
