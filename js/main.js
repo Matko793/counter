@@ -21,6 +21,10 @@
         num = 0;
         abraka.textContent = num;
     }
+    function mode(){
+        let element = document.getElementById("myBody");
+        element.classList.toggle("darkmode");
+    }
 
     // assining functions
     document.getElementById("inc").onclick = plus
