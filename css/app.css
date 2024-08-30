@@ -1,54 +1,50 @@
-.darkmode{
-  background-color: #000000;
-  background-image: none;
-}
+
 header button{
   width: 3vw;
   height: 3vw;
   border-radius: 100% ;
   border: none; 
   margin-right: 3rem;
-  background-color: #553c9a;
+  background-color: #70c3e6;
   display: flex;
   align-items: center;
   justify-content: center;
   
 }
 header button:hover{
-  background-color: aliceblue;
+  background-color: rgb(180, 195, 207);
   
   
 }
-header button svg:first-child{
+header button svg:last-child{
   display: none;
 }
 header{
     display: flex;
-    background-image: linear-gradient(to top, rgba(0,0,0,0.0),rgba(0, 0, 0,0.8), rgba(0,0,0,1));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0),rgba(255, 255, 255,0.8), rgba(255,255,255,1));
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
 }
 
 .title{
-    
-  font-size: 70px;
   font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #d3b793);
+  background-image: linear-gradient(to left, #00c8ff, #a7abae);
   color: transparent;
   background-clip: text;
     -webkit-background-clip: text;
     margin-left: 2rem;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 body{
     margin: 0rem;
-    background-image: url(https://img.freepik.com/free-photo/aesthetic-background-with-abstract-sunset-projector-lamp_53876-103693.jpg?t=st=1724695701~exp=1724699301~hmac=4926dd3cbd96b8ef832a17bc002be5ac3ecd7599e4545c65e12ea32e36a581d4&w=1800);
+    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg?t=st=1725040578~exp=1725044178~hmac=c867e46de448639eee74148098249ef554f241d87fd0359ae5ddc1b94daff958&w=1800);
 
 }
 h1{
+margin-top: 1rem;
 text-align: center;
 font-size: 4rem;
 color: azure;
@@ -57,10 +53,13 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 }
 .display h2{
     text-align: center;
-    font-size: 4rem;
+    font-size: 8vw;
     color: azure;
     text-shadow: 0 0 4px #000000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
     }
 .display{
     font-family:'Times New Roman', Times, serif;
@@ -95,9 +94,10 @@ section button{
 
 .buttons:hover,
 .buttons:active{
-    background-color: blueviolet;
+    background-color: rgb(46, 248, 255);
 } 
 
+/* responsivity*/
 
 @media screen and (min-width: 810px){
     .display{

@@ -1,0 +1,28 @@
+.darkmode {
+    background-image: none;
+    background-image: url(https://img.freepik.com/free-photo/aesthetic-background-with-abstract-sunset-projector-lamp_53876-103693.jpg?t=st=1724695701~exp=1724699301~hmac=4926dd3cbd96b8ef832a17bc002be5ac3ecd7599e4545c65e12ea32e36a581d4&w=1800);
+}
+.darkmode button svg:first-child{
+    display: none;
+  }
+.darkmode button svg:last-child{
+    display: flex;
+  }
+.darkmode header button{
+    background-color: #553c9a;
+  }
+.darkmode header button:hover{
+    background-color: rgb(188, 208, 224);  
+  }
+ .darkmode header{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
+    color: aliceblue;
+}
+.darkmode .title{
+    background-image: none;
+    background-image: linear-gradient(to left, #553c9a, #d3b793);
+}
+.darkmode .buttons:hover,
+.darkmode .buttons:active{
+    background-color: blueviolet;
+} 
