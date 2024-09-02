@@ -1,3 +1,14 @@
+/* Pridaj tento CSS kód do súboru app.css */
+.fade * {
+    opacity: 0;
+}
+
+.fade.fade-in * {
+    opacity: 1;
+    transition: opacity 2s;
+
+}
+
 
 header button{
   width: 3vw;
@@ -9,6 +20,7 @@ header button{
   display: flex;
   align-items: center;
   justify-content: center;
+
   
 }
 header button:hover{
@@ -27,6 +39,7 @@ header{
     padding: 1rem;
     align-items: center;
     justify-content: space-between;
+    border-end-end-radius: 18%;
 }
 
 .title{
