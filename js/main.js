@@ -1,8 +1,6 @@
 
     //variables
     var slideSource = document.getElementById('slideSource');
-
-
     let abraka = document.querySelector(".display");
     let num = 0;
 
@@ -20,7 +18,7 @@
             abraka.textContent = num;
         }  
     }
-    function    reset(){
+    function reset(){
         num = 0;
         abraka.textContent = num;
     }
