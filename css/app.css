@@ -1,40 +1,11 @@
-/* Pridaj tento CSS kód do súboru app.css */
-.fade * {
-    opacity: 0;
-}
-
-.fade.fade-in * {
-    opacity: 1;
-    transition: opacity 2s;
+body{
+    margin: 0rem;
+    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg?t=st=1725040578~exp=1725044178~hmac=c867e46de448639eee74148098249ef554f241d87fd0359ae5ddc1b94daff958&w=1800);
 
 }
 
-header button{
-  width: 3rem;
-  height: 3rem;
-  border-radius: 100% ;
-  border: none; 
-  margin-right: clamp(1rem, 5vw, 17rem);
-  background-color: #70c3e6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*header*/
 
-  
-}
-header button:hover,
-header button:active{
-  background-color: rgb(180, 195, 207);
-  
-  
-}
-svg{
-    width: 100%;
-    height: 65%;
-}
-header button svg:last-child{
-  display: none;
-}
 header{
     display: flex;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0),rgba(255, 255, 255,0.8), rgba(255,255,255,1));
@@ -45,29 +16,51 @@ header{
     justify-content: space-between;
     border-end-end-radius: 18%;
 }
-
 .title{
-  font-weight: 600;
-  background-image: linear-gradient(to left, #00c8ff, #a7abae);
-  color: transparent;
-  background-clip: text;
-    -webkit-background-clip: text;
-    margin-left: 1.5rem;
-    font-size: clamp(1.5rem,50vw,3.5rem );
+    font-weight: 600;
+    background-image: linear-gradient(to left, #00c8ff, #a7abae);
+    color: transparent;
+    background-clip: text;
+      -webkit-background-clip: text;
+      margin-left: 1.5rem;
+      font-size: clamp(1.5rem,50vw,3.5rem );
 }
-body{
-    margin: 0rem;
-    background-image: url(https://img.freepik.com/free-photo/white-cloud-blue-sky-sea_74190-4488.jpg?t=st=1725040578~exp=1725044178~hmac=c867e46de448639eee74148098249ef554f241d87fd0359ae5ddc1b94daff958&w=1800);
-
+header button{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100% ;
+    border: none; 
+    margin-right: clamp(1rem, 5vw, 17rem);
+    background-color: #70c3e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+  }
+  header button:hover,
+  header button:active{
+    background-color: rgb(180, 195, 207);
+    
+    
 }
+header button svg:last-child{
+    display: none;
+  }
+svg{
+    width: 100%;
+    height: 65%;
+}
+ /*main content*/
 h1{
-margin-top: 1rem;
-text-align: center;
-font-size: 4rem;
-color: azure;
-text-shadow: 0 0 4px #000000;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 4rem;
+    color: azure;
+    text-shadow: 0 0 4px #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+
 
 .display{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -108,7 +101,15 @@ section button{
 .buttons:active{
     background-color: rgb(46, 248, 255);
 } 
+.fade * {
+    opacity: 0;
+}
 
+.fade.fade-in * {
+    opacity: 1;
+    transition: opacity 2s;
+
+}
 /* responsivity*/
 @media screen and (min-width: 480px){
     .display{
