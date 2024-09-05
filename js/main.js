@@ -3,8 +3,7 @@
     var slideSource = document.getElementById('slideSource');
 
 
-
-    let abraka = document.querySelector("h2");
+    let abraka = document.querySelector(".display");
     let num = 0;
 
     //functions
@@ -29,16 +28,14 @@
         let element = document.getElementById("myBody");
         element.classList.add("fade");
         element.classList.toggle("darkmode");
-        // Počkajte chvíľu, aby prechod začal a potom zmeníme režim
         setTimeout(() => {
-            element.classList.add("fade-in");      // Pridaj triedu pre viditeľnosť po zmene módu
-            }, 100);  // Nastavenie veľmi krátkeho oneskorenia
+            element.classList.add("fade-in");      
+            }, 100);  
 
-    // Po dokončení prechodu odstráň .fade triedu
         setTimeout(() => {
             element.classList.remove("fade");
             element.classList.remove("fade-in");
-            }, 120);  // Odstráň triedy po 2 sekundách (dĺžka prechodu)
+            }, 120);  
 
     }
 

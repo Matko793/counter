@@ -11,9 +11,12 @@
 .darkmode header button{
     background-color: #553c9a;
   }
-.darkmode header button:hover{
-    background-color: rgb(188, 208, 224);  
-  }
+.darkmode header button:hover,
+.darkmode header button:active{
+  background-color: rgb(180, 195, 207);
+  
+  
+}
  .darkmode header{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.8), rgb(0, 0, 0));
     color: aliceblue;
@@ -29,9 +32,7 @@
 .darkmode .buttons{
     background-color: rgb(0, 0, 0);
     color: aliceblue;
-    font-size: 1.3rem;
     border: solid white 0.2rem;
-    border-radius: 30%;
-    padding: 0.8rem;
+
 
 }

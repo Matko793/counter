@@ -9,13 +9,12 @@
 
 }
 
-
 header button{
-  width: 3vw;
-  height: 3vw;
+  width: 3rem;
+  height: 3rem;
   border-radius: 100% ;
   border: none; 
-  margin-right: 3rem;
+  margin-right: clamp(1rem, 5vw, 17rem);
   background-color: #70c3e6;
   display: flex;
   align-items: center;
@@ -23,10 +22,15 @@ header button{
 
   
 }
-header button:hover{
+header button:hover,
+header button:active{
   background-color: rgb(180, 195, 207);
   
   
+}
+svg{
+    width: 100%;
+    height: 65%;
 }
 header button svg:last-child{
   display: none;
@@ -48,8 +52,8 @@ header{
   color: transparent;
   background-clip: text;
     -webkit-background-clip: text;
-    margin-left: 2rem;
-    font-size: 4vw;
+    margin-left: 1.5rem;
+    font-size: clamp(1.5rem,50vw,3.5rem );
 }
 body{
     margin: 0rem;
@@ -64,29 +68,24 @@ color: azure;
 text-shadow: 0 0 4px #000000;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.display h2{
-    text-align: center;
-    font-size: 8vw;
-    color: azure;
-    text-shadow: 0 0 4px #000000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
 
-    }
 .display{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 4rem;
+    font-size: 7rem; 
     border: solid black 0.5rem;
-    margin-left: clamp(2rem,23vw,15rem);
-    margin-right: clamp(2rem,23vw,15rem);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 3rem;
     background-color: aliceblue;
+    color: azure;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: clamp(1rem,18vw,4rem);
+    margin-right: clamp(1rem,18vw,4rem);
+    text-shadow: 0 0 4px #000000;
+
 }
 section{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin: 1rem;
@@ -98,10 +97,10 @@ section button{
 .buttons{
     background-color: rgb(234, 234, 234);
     color: rgb(0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 2rem;
     border: solid rgb(0, 0, 0) 0.2rem;
     border-radius: 30%;
-    padding: 0.8rem;
+    padding: 1.1rem;
 
 }
 
@@ -111,19 +110,36 @@ section button{
 } 
 
 /* responsivity*/
-
-@media screen and (min-width: 810px){
+@media screen and (min-width: 480px){
     .display{
-        margin-left: clamp(17rem,10vw,50rem);
-        margin-right: clamp(17rem,10vw,50rem);
+        margin-left: clamp(4rem, 25vw, 15rem);
+        margin-right: clamp(4rem, 25vw, 15rem);
     }
-
     
+}
+@media screen and (min-width: 810px){
+    section{
+        display: flex;
+        
+    }
+    .display{
+        margin-left: clamp(15rem,30vw,50rem);
+        margin-right: clamp(15rem,30vw,50rem);
+    }
+    .title{
+        font-size: clamp(3.5rem,50vw,4.5rem );
+        margin-left: clamp(2.5rem,7vw,4.5rem);
+    }
+    header button{
+        margin-right: clamp(2.5rem,7vw,4.5rem);
+        width: 4rem;
+        height: 4rem;
+    }
 }
 @media screen and (min-width: 1100px){
     .display{
-        margin-left: clamp(25rem,30rem,35rem);
-        margin-right: clamp(25rem,30rem,35rem);
+        margin-left: clamp(25rem,39vw,31rem);
+        margin-right: clamp(25rem,39vw,31rem);
     }
 
     
