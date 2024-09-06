@@ -4,6 +4,12 @@
     let abraka = document.querySelector(".display");
     let num = 0;
 
+    // assining functions
+    document.getElementById("inc").onclick = plus
+    document.getElementById("min").onclick = minus
+    document.getElementById("rst").onclick = reset
+    document.body.addEventListener("keyup", keyboardedit)
+
     //functions
     function plus(){
         num++
@@ -36,28 +42,18 @@
             }, 120);  
 
     }
-
-    // assining functions
-    document.getElementById("inc").onclick = plus
-    document.getElementById("min").onclick = minus
-    document.getElementById("rst").onclick = reset
-
-    document.body.addEventListener("keyup", function keyboardedit(event){
+    function keyboardedit(event){
         if(event.key == "ArrowUp"){
-            num++
-            abraka.textContent = num; 
+            plus(); 
         }
         else if(event.key == "ArrowDown"){
-            if (num == 0){
-                num = 0;
-            }
-            else{
-                num--
-                abraka.textContent = num;
-            }  
+            minus();
         }
         else if(event.key == " "){
-            num = 0;
-            abraka.textContent = num;
+            reset();
         }
-    })
+        else if(event.key == "m"){
+            mode();
+        }
+    }
+    
