@@ -42,4 +42,22 @@
     document.getElementById("min").onclick = minus
     document.getElementById("rst").onclick = reset
 
-  
+    document.body.addEventListener("keyup", function keyboardedit(event){
+        if(event.key == "ArrowUp"){
+            num++
+            abraka.textContent = num; 
+        }
+        else if(event.key == "ArrowDown"){
+            if (num == 0){
+                num = 0;
+            }
+            else{
+                num--
+                abraka.textContent = num;
+            }  
+        }
+        else if(event.key == " "){
+            num = 0;
+            abraka.textContent = num;
+        }
+    })
