@@ -8,7 +8,8 @@
     document.getElementById("inc").onclick = plus
     document.getElementById("min").onclick = minus
     document.getElementById("rst").onclick = reset
-    document.body.addEventListener("keyup", keyboardedit)
+    document.body.addEventListener("keyup", buttonPush)
+    document.body.addEventListener("keydown", keyboardeditt)
 
     //functions
     function plus(){
@@ -42,7 +43,7 @@
             }, 120);  
 
     }
-    function keyboardedit(event){
+    function buttonPush(event){
         if(event.key == "ArrowUp"){
             plus(); 
         }
@@ -56,4 +57,17 @@
             mode();
         }
     }
-    
+    function keyboardeditt(event){
+        if(event.key == "ArrowUp"){
+            plus(); 
+        }
+        else if(event.key == "ArrowDown"){
+            minus();
+        }
+        else if(event.key == " "){
+            reset();
+        }
+        else if(event.key == "m"){
+            mode();
+        }
+    }
