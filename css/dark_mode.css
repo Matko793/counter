@@ -1,7 +1,9 @@
 .darkmode {
-    background-image: none;
-    background-image: url(https://img.freepik.com/free-photo/aesthetic-background-with-abstract-sunset-projector-lamp_53876-103693.jpg?t=st=1724695701~exp=1724699301~hmac=4926dd3cbd96b8ef832a17bc002be5ac3ecd7599e4545c65e12ea32e36a581d4&w=1800);
+  background-image: none;
+  background-image: url(https://img.freepik.com/free-photo/aesthetic-background-with-abstract-sunset-projector-lamp_53876-103693.jpg?t=st=1724695701~exp=1724699301~hmac=4926dd3cbd96b8ef832a17bc002be5ac3ecd7599e4545c65e12ea32e36a581d4&w=1800);
+  transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
+
 .darkmode button svg:first-child{
     display: none;
   }
@@ -35,4 +37,7 @@
     border: solid white 0.2rem;
 
 
+}
+header, .title, .buttons {
+  transition: all 0.5s ease-in-out;
 }

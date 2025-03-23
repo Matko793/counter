@@ -57,17 +57,4 @@
             mode();
         }
     }
-    function keyboardeditt(event){
-        if(event.key == "ArrowUp"){
-            plus(); 
-        }
-        else if(event.key == "ArrowDown"){
-            minus();
-        }
-        else if(event.key == " "){
-            reset();
-        }
-        else if(event.key == "m"){
-            mode();
-        }
-    }
+    
